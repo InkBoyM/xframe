@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nebula | unblocked apps</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "x-frame-bypass": "https://unpkg.com/@ungap/custom-elements/es.js"
+        }
+    }
+    </script>
+    <script src="xframe-bypass.js"></script>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <div class="nebula-glow">
+            <h1>nebula</h1>
+            <p>unblocked apps for school, made with ❤️ by @tommyfart</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="apps">Apps</button>
+            <button class="tab-btn" data-tab="proxies">Proxies</button>
+            <button class="tab-btn" data-tab="keybinds">Keybinds</button>
+        </div>
+        
+        <div class="tab-content active" id="apps">
+            <div class="apps-grid">
+                <button class="app-btn" data-url="https://gn-math.github.io">
+                    <img class="app-icon" data-favicon="https://gn-math.github.io/favicon.ico" alt="GN-Math">
+                    <span>GN-Math</span>
+                </button>
+                <button class="app-btn" data-url="https://gamepix.com">
+                    <img class="app-icon" data-favicon="https://www.gamepix.com/favicon.ico" alt="GamePix">
+                    <span>GamePix</span>
+                </button>
+                <button class="app-btn" data-url="https://crazygames.com">
+                    <img class="app-icon" data-favicon="https://www.crazygames.com/favicon.ico" alt="CrazyGames">
+                    <span>CrazyGames</span>
+                </button>
+                <button class="app-btn" data-url="https://tiktok.com">
+                    <img class="app-icon" data-favicon="https://www.tiktok.com/favicon.ico" alt="Tiktok">
+                    <span>Tiktok</span>
+                </button>
+                <button class="app-btn" data-url="https://spotify.com">
+                    <img class="app-icon" data-favicon="https://www.spotify.com/favicon.ico" alt="Spotify">
+                    <span>Spotify</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="tab-content" id="proxies">
+            <div class="apps-grid">
+                <button class="app-btn" data-url="https://learningmath.pages.dev/">
+                    <svg class="app-icon" viewBox="0 0 24 24" width="32" height="32">
+                        <circle cx="12" cy="12" r="10" fill="#6e44ff"/>
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" style="font-size: 14px;">IN</text>
+                    </svg>
+                    <span>Interstellar</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="tab-content" id="keybinds">
+            <div class="keybind-container">
+                <div class="keybind-message">
+                    <p>These are RECOMMENDED to have, so when your teachers go to your desk you use the keybind and it will look like your doing work</p>
+                </div>
+                <div class="keybind-input">
+                    <input type="text" id="keybindInput" placeholder="Click to set keybind..." readonly>
+                    <input type="url" id="urlInput" placeholder="Enter website URL (e.g. https://kahoot.it)">
+                    <button id="addKeybind">Add Keybind</button>
+                </div>
+                <div class="keybind-list">
+                    <!-- Keybinds will be listed here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="credits">
+            credits to everyone projects i included.
+        </div>
+    </div>
+
+    <div class="modal" id="openModal">
+        <div class="modal-content">
+            <h2>Open Website</h2>
+            <button class="modal-btn" id="openBlank">Open in about:blank</button>
+            <button class="modal-btn" id="openHere">Open Here</button>
+            <button class="modal-btn close-btn">Close</button>
+        </div>
+    </div>
+
+    <div id="iframeContainer" class="iframe-container">
+        <button class="close-iframe">×</button>
+        <iframe is="x-frame-bypass" id="bypassFrame"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
